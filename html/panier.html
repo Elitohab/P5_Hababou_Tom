@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dans notre commerce, des nounours à ofrir en cadeau ou pour le plaisir">
+    <link rel="icon" type="image/png" href="../images/favicon.ico" />
+
+    <!--Google font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bentham&display=swap" rel="stylesheet">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <title>Orinico panier</title>
+</head>
+<body>
+    <main>
+        <header class="header">
+            <figure class="header_figure">
+                <img class="header_figure_image" src="../images/logo_orinico.jpg" alt="logo_orinico">
+            </figure>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Accueil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="panier.html">Panier</a>
+                </li>
+              </ul>
+        </header>
+        <section class="section_panier container-fluid">
+            <h1 class="text-center">Panier</h1>
+            <div class="col-md-8 offset-md-2 text-center mt-2">
+                <div class="container"></div>
+            <div class="card mb-3">
+                    <div id="articlePanier"></div>
+                    <div class="card-body">
+                    <ul class="">
+                        <li class="list-group-item align-items-center border-0 px-0 mb-3">
+                        <h2 id="TotalPanier">Votre Panier est vide</h2>
+                        </li>
+                    </ul>
+                    <div class="row justify-content-center">
+                        <button type="button" class="btn btn-primary btn-lg m-2 btnContinuerAchat">Continuez Achats</button>
+                        <button type="button" class="suppPanier btn btn-outline-danger btn-lg float-right m-2">Supprimer panier</button>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="m-4">
+          <h3>Formulaire de contact</h3>
+            <form method="POST" id="formulaireCommande">
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="form_prenom">Prénom</label>
+                    <input type="text" class="form-control" id="form_prenom" value="julien" required>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="form_nom">Nom</label>
+                    <input type="text" class="form-control" id="form_nom" placeholder="brochant" required>
+                  </div>
+                  <div class="col-md-6 mb-3">
+                    <label for="form_email">Email</label>
+                    <input type="email" class="form-control" id="form_email" placeholder="j.brochant@orinico.com" required>
+                </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="form_address">Adresse</label>
+                    <input type="text" class="form-control" id="form_address" placeholder="Adresse" required>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="form_ville">Ville</label>
+                    <input type="text" class="form-control" id="form_ville" placeholder="Paris" required>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="form_codePostal">Code Postal</label>
+                    <input type="text" class="form-control" id="form_codePostal" placeholder="75000" required>
+                  </div>
+                </div>
+                <div class="row justify-content-center"> 
+                    <button type="submit" class="btn btn-primary btn-lg" id="btnValiderForm">Valider commande</button> 
+                </div>
+              </form>
+        </section>
+    </main>
+    <footer class="bg-dark">
+        <div class="container">
+            <div class="row">
+              <div class="col">
+                <ul class="list-inline text-center text-center">
+                    <li class="list-inline-item"><a href="index.html">Accueil</a></li>
+                    <li class="list-inline-item"><a href="#" >Contact</a></li>
+                    <li class="list-inline-item"><a href="#" >Mentions légales</a></li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/fonctions.js"></script>
+    <script src="../js/panier.js"></script>
+</body>
+</html>

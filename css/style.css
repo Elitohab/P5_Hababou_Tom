@@ -1,0 +1,20 @@
+
+/* HEADER */
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #87B392;
+}
+.header_figure_image{
+    height: 100px;
+    width: 50%;
+}
+
+.section_card{
+    margin: 0.5%;
+}
+
+/*DETAILS*/
+
+/*PANIER*/

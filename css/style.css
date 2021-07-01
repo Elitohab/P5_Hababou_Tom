@@ -1,19 +1,55 @@
 
-/* HEADER */
-.header{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    background-color: #87B392;
-}
-.header_figure_image{
-    height: 100px;
-    width: 50%;
+body {
+    margin:0;
 }
 
-.section_card{
-    margin: 0.5%;
+a, a:hover {
+    text-decoration : none;
+    color : inherit;
 }
+
+
+/* HEADER */
+.header{
+    height: 70px;
+    display: block;
+    background-color: #f3e9f1;
+    box-shadow: 0 0 5px 2px rgb(172, 172, 172);
+}
+.header__logo{
+    width: 150px;
+}
+
+
+/* INDEX */
+.section_detail h1{
+    font-size: 2rem;
+    text-align: center;    
+}
+
+.carte {
+    box-shadow: 0 0 10px 2px #ccc;
+    border: 1px solid #ddd;
+}
+
+.carte__image {
+    max-height: 18rem;
+    object-fit: cover;
+}
+
+
+
+/* FOOTER */
+
+.footer{
+    background-color: #f3e9f1;
+    border-top: 1px solid #ccc;
+}
+
+
+
+
+
 
 /*DETAILS*/
 
